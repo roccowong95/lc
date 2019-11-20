@@ -5,13 +5,12 @@
  */
 func longestPalindrome(s string) string {
 	// expand from center
-	/*
 	length := len(s)
 	left, right := 0, 0
 	for center := 0; center < length; center++ {
 		// odd
 		l, r := center, center
-		for l >= 0 && r < length && s[l]==s[r] {
+		for l >= 0 && r < length && s[l] == s[r] {
 			l--
 			r++
 		}
@@ -25,7 +24,7 @@ func longestPalindrome(s string) string {
 
 		// even
 		l, r = center, center+1
-		for l >= 0 && r < length && s[l]==s[r] {
+		for l >= 0 && r < length && s[l] == s[r] {
 			l--
 			r++
 		}
@@ -37,7 +36,6 @@ func longestPalindrome(s string) string {
 		}
 	}
 	return s[left:right]
-	*/
 
 	// dp:
 	// i: left most.
